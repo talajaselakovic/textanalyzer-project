@@ -1,0 +1,39 @@
+<div class="analysis">
+  <h1 class="headline-text-analyzer">Text Analyzer</h1>
+
+  <!-- Input Section -->
+  <input
+    class="inputText"
+    type="text"
+    [(ngModel)]="inputText"
+    placeholder="Insert your text here"
+    required
+  />
+
+  <span class="helpSpan">{{ helpSpan }}</span>
+
+  <!-- Analysis Type Dropdown -->
+  <div class="dropdownAnalysisType">
+    <label for="analysisType" class="labelAnalysisType"
+      >Choose analysis type:</label
+    >
+    <select [(ngModel)]="selectedAnalysisType">
+      <option value="vowels">Vowels</option>
+      <option value="consonants">Consonants</option>
+    </select>
+  </div>
+
+  <!-- Analysis Button -->
+  <button (click)="analyzeText()" class="analysisButton">Start analysis</button>
+
+  <!-- Toggle Switch Component for Online or Offline analysis -->
+  <app-toggle-switch></app-toggle-switch>
+
+  <!-- Results Section -->
+  <div>
+    <h2 class="headline-result-analyzer">Results of the analysis:</h2>
+    <ul>
+      <li *ngFor="let result of analysisResults">{{ result }}</li>
+    </ul>
+  </div>
+</div>

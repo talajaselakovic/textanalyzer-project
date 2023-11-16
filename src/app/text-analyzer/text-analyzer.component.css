@@ -1,0 +1,82 @@
+/*Container for all components */
+.analysis {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* Title */
+.headline-text-analyzer {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+/* Input text */
+.inputText {
+  width: 100%;
+  height: 35px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Dropdown menu */
+.dropdownAnalysisType {
+  text-align: center;
+  font-size: 17px;
+}
+
+/* Label of the dropdown menu */
+.labelAnalysisType {
+  margin-right: 10px;
+}
+
+/* Button */
+.analysisButton {
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Pointer when hovering over button */
+  margin-left: 25%;
+  margin-top: 15px;
+}
+
+/* Changing background color when hovering over button */
+.analysisButton:hover {
+  background-color: #0056b3;
+}
+
+/* Help text */
+.helpSpan {
+  padding: 10px;
+  margin: 10px 0;
+  color: crimson;
+}
+
+/* Headline results*/
+.headline-result-analyzer {
+  margin-top: 25px;
+}
+
+/* Result list */
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 17px;
+}
+
+/* Items of the result list */
+li {
+  text-align: left;
+  margin: 10px 0;
+}

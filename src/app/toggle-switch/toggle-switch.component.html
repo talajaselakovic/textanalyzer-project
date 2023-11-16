@@ -1,0 +1,9 @@
+<!-- Toggle Switch for Online and Offline Mode -->
+<mat-slide-toggle
+  class="toggle-switch"
+  [(ngModel)]="onlineMode"
+  (change)="toggleAnalysisMode()"
+></mat-slide-toggle>
+
+<!-- Display the current mode (Online or Offline) -->
+<span class="mode">{{ onlineMode ? "Online Mode" : "Offline Mode" }}</span>

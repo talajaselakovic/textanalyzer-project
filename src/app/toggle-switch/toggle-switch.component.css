@@ -1,0 +1,9 @@
+/* Toggle switch for changing online and offline mode */
+.toggle-switch {
+  margin-left: 25px;
+}
+
+/* Label of the toggle switch */
+.mode {
+  font-size: 15px;
+}
